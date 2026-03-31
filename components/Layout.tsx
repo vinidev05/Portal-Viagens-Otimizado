@@ -9,8 +9,7 @@ export default function Layout({ children }: Props) {
   return (
     <div>
       <header className={styles.header}>
-        <h1>Portal de Viagens</h1>
-
+        <h1>🌎 Destinos Turísticos</h1>
         <nav>
           <Link href="/">Home</Link>
           <Link href="/destinos">Destinos</Link>
@@ -22,7 +21,7 @@ export default function Layout({ children }: Props) {
       </main>
 
       <footer className={styles.footer}>
-        <p>Portal de Viagens - Curso</p>
+        © 2026 - Portal Viagens
       </footer>
     </div>
   )

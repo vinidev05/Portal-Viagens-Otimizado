@@ -2,9 +2,9 @@
   width: 260px;
   border-radius: 12px;
   overflow: hidden;
-  background: rgb(203, 240, 241);
+  background: white;
   box-shadow: 0 6px 20px rgba(0,0,0,0.1);
-  transition: 0.3s;
+  transition: transform 0.3s ease;
 }
 
 .card:hover {
@@ -14,7 +14,7 @@
 .card img {
   width: 100%;
   height: 160px;
-  object-fit: cover;
+  object-fit: cover; /* mantém proporção sem distorcer */
 }
 
 .card h3 {

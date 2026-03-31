@@ -1,34 +1,80 @@
-.card {
-  width: 260px;
-  border-radius: 12px;
-  overflow: hidden;
-  background: white;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+.header {
+  background: #4f46e5;
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header a {
+  margin-left: 15px;
+  color: white;
+  text-decoration: none;
+}
+
+.main {
+  padding: 40px;
+  background: #e0f7fa; /* azul ciano clarinho */
+  min-height: 70vh;
+}
+
+.footer {
+  background: #4f46e5; /* azul consistente com o header */
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Home */
+.home {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.home h2 {
+  font-size: 28px;
+  color: #1f2937;
+  margin-bottom: 10px;
+}
+
+.home p {
+  font-size: 18px;
+  color: #4b5563;
+}
+
+.button {
+  margin-top: 30px;
+  padding: 12px 24px;
+  background: #4f46e5;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
   transition: 0.3s;
+  display: inline-block;
 }
 
-.card:hover {
-  transform: scale(1.05);
+.button:hover {
+  background: #3730a3;
 }
 
-.card img {
-  width: 100%;
-  height: 160px;
+/* Detalhes */
+.detalhe {
+  text-align: center;
+}
+
+.detalhe img {
+  width: 600px;
+  border-radius: 12px;
+  margin-top: 20px;
   object-fit: cover;
 }
 
-.card h3 {
-  margin: 10px;
+.detalhe p {
+  margin-top: 20px;
   font-size: 18px;
-}
-
-.card a {
-  display: block;
-  margin: 10px;
-  padding: 10px;
-  background: #4f46e5;
-  color: white;
-  border-radius: 6px;
-  text-align: center;
-  text-decoration: none;
+  color: #4b5563;
 }
