@@ -1,6 +1,14 @@
 import { destinos } from "@/data/destinos"
+import styles from "@/styles/Layout.module.css"
+import Image from "next/image"
 
-export default async function Page({ params }: any) {
+
+export default async function Page({
+  params,
+}: {
+  params: Promise<{ id: string }>
+}) {
+
   const { id } = await params
 
   const destino = destinos.find((d) => d.id === id)
@@ -10,28 +18,15 @@ export default async function Page({ params }: any) {
   }
 
   return (
-    <div
-      style={{
-        maxWidth: "800px",
-        margin: "0 auto",
-        textAlign: "center",
-      }}
-    >
+    <div className={styles.detalhe}>
       <h1>{destino.nome}</h1>
-
-      <img
-        src={destino.imagem}
-        alt={destino.nome}
-        style={{
-          width: "100%",
-          borderRadius: "12px",
-          marginTop: "20px",
-        }}
-      />
-
-      <p style={{ marginTop: "20px", fontSize: "18px" }}>
-        {destino.descricao}
-      </p>
+      <Image src={destino.imagem}
+       alt={destino.nome}
+       width={800}
+       height={500}
+       loading="lazy" 
+       />
+      <p>{destino.descricao}</p>
     </div>
   )
 }

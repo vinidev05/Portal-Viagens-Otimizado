@@ -6,7 +6,7 @@ export default function Destinos() {
     <div>
       <h2>Destinos Turísticos</h2>
 
-      <div style={{ display: "flex", flexWrap: "wrap" }}>
+      <div style={{ display: "flex", flexWrap: "wrap", gap: "20px", justifyContent: "center" }}>
         {destinos.map((destino) => (
           <CardDestino
             key={destino.id}
