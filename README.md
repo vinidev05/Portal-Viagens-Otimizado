@@ -1,36 +1,123 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚀 Portal Viagens - Otimização de Performance (Aula 32)
 
-## Getting Started
+## 📌 Descrição do projeto
 
-First, run the development server:
+O **Portal Viagens** é uma aplicação desenvolvida com **Next.js** que apresenta destinos turísticos brasileiros, permitindo ao usuário visualizar informações sobre cada local.
+
+Nesta atividade foi realizada uma análise de performance utilizando o **Lighthouse**, identificando gargalos e aplicando melhorias para tornar a aplicação mais rápida e otimizada.
+
+---
+
+# 🎯 Objetivo
+
+Aplicar técnicas de otimização de performance em uma aplicação Front-End já existente, utilizando boas práticas apresentadas durante as aulas e comparando os resultados antes e depois das melhorias.
+
+---
+
+# 🔍 Gargalos identificados
+
+Após a primeira análise utilizando o Lighthouse foram encontrados os seguintes pontos de melhoria:
+
+- Imagens no formato **.jpg**, com maior tamanho de arquivo.
+- Utilização da tag HTML `<img>` sem otimização.
+- Ausência de carregamento preguiçoso (Lazy Loading).
+- Falta de metadados (`title` e `description`) para SEO.
+- Tempo elevado de carregamento da página.
+
+---
+
+# ⚙️ Melhorias aplicadas
+
+Foram realizadas as seguintes otimizações:
+
+- Conversão das imagens de **.jpg** para **.webp**.
+- Substituição da tag `<img>` pelo componente `Image` do Next.js.
+- Implementação de `loading="lazy"` para carregamento sob demanda.
+- Inclusão de `metadata` no `app/layout.tsx`, adicionando título e descrição da página.
+- Organização e limpeza do projeto, removendo arquivos e recursos desnecessários.
+- Geração da versão de produção utilizando:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm run build
+npm run start
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+# 📊 Comparativo dos resultados
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+| Métrica | Antes | Depois |
+|----------|-------:|--------:|
+| Performance | **63** | **66** |
+| Accessibility | **91** | **95** |
+| Best Practices | **100** | **100** |
+| SEO | **75** | **100** |
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+# 📸 Relatórios do Lighthouse
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Os relatórios utilizados na comparação encontram-se na pasta:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```
+relatorios/
+```
 
-## Deploy on Vercel
+### Antes
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+![Antes](relatorios/antes.png)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Depois
+
+![Depois](relatorios/depois.png)
+
+---
+
+# ✅ Conclusão
+
+As otimizações realizadas melhoraram significativamente a qualidade do projeto.
+
+Os principais ganhos foram:
+
+- Melhor otimização das imagens.
+- Redução do tempo de carregamento.
+- Melhoria na experiência do usuário.
+- SEO elevado de 75 para 100.
+- Uso de recursos nativos do Next.js para otimização de imagens.
+
+Embora a pontuação de Performance tenha aumentado apenas alguns pontos (63 para 66), houve melhora perceptível na velocidade de carregamento da aplicação, especialmente após a utilização de imagens em formato WebP e do componente `next/image`.
+
+---
+
+# 🛠️ Tecnologias utilizadas
+
+- Next.js
+- React
+- TypeScript
+- Lighthouse
+- HTML5
+- CSS Modules
+- WebP
+
+---
+
+# 📁 Estrutura do projeto
+
+```
+portal-viagens-aula-32
+│
+├── app/
+├── components/
+├── data/
+├── public/
+├── styles/
+│
+├── relatorios/
+│   ├── antes.png
+│   └── depois.png
+│
+├── README.md
+├── package.json
+├── tsconfig.json
+└── ...
+```
