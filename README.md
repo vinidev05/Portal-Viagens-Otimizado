@@ -2,15 +2,15 @@
 
 ## 📌 Descrição
 
-O **Portal Viagens** é uma aplicação desenvolvida com **Next.js** que apresenta destinos turísticos brasileiros. O objetivo do projeto é permitir que os usuários conheçam diferentes destinos, visualizem imagens e acessem informações de forma simples e intuitiva.
+O **Portal Viagens** é uma aplicação desenvolvida com **Next.js** que apresenta destinos turísticos brasileiros. O objetivo do projeto é permitir que os usuários conheçam diferentes destinos, visualizem imagens e acessem informações sobre cada local de forma simples e intuitiva.
 
-Nesta atividade foi realizada uma análise de performance utilizando o **Google Lighthouse**, aplicando técnicas de otimização para melhorar o carregamento da aplicação e a experiência do usuário.
+Nesta atividade foi realizada uma análise de performance utilizando o **Google Lighthouse**, identificando gargalos e aplicando técnicas de otimização para melhorar o carregamento da aplicação e a experiência do usuário.
 
 ---
 
 ## 🎯 Objetivo da atividade
 
-Aplicar os conceitos estudados sobre otimização de performance em um projeto Front-End existente, identificando gargalos, implementando melhorias e comparando os resultados obtidos antes e depois das otimizações.
+Aplicar os conceitos estudados sobre otimização de performance em um projeto Front-End existente, realizando uma comparação entre o cenário inicial e os resultados obtidos após as melhorias implementadas.
 
 ---
 
@@ -25,76 +25,106 @@ Aplicar os conceitos estudados sobre otimização de performance em um projeto F
 
 ---
 
-# 📊 Análise inicial
-
-A primeira análise foi realizada utilizando o **Google Lighthouse**, identificando oportunidades de melhoria relacionadas ao carregamento da aplicação.
-
-| Métrica | Antes |
-|---------|-------:|
-| Performance | **63** |
-| Accessibility | **91** |
-| Best Practices | **100** |
-| SEO | **75** |
-
-## 📷 Relatório inicial
-
-O relatório abaixo apresenta a situação do projeto antes das otimizações.
-
-![Relatório Antes](relatorios/antes.jpeg)
-
----
-
 # 🔍 Gargalos identificados
 
-Durante a análise foram encontrados alguns pontos que poderiam ser melhorados:
+Durante a análise inicial foram identificados alguns pontos que impactavam a performance da aplicação:
 
-- Imagens utilizando o formato **.jpg**.
-- Uso da tag HTML `<img>`.
-- Falta de otimização automática das imagens.
-- Ausência de metadados para SEO.
-- Tempo de carregamento superior ao esperado.
+- Imagens em formato **.jpg**.
+- Utilização da tag HTML `<img>`.
+- Ausência de otimização automática das imagens.
+- Falta de metadados para SEO.
+- Carregamento mais lento devido ao tamanho das imagens.
 
 ---
 
 # ⚙️ Melhorias aplicadas
 
-Após a análise foram realizadas as seguintes otimizações:
+Foram realizadas as seguintes otimizações:
 
 - Conversão das imagens de **.jpg** para **.webp**.
 - Substituição da tag `<img>` pelo componente `next/image`.
-- Implementação de **Lazy Loading** (`loading="lazy"`).
-- Adição de **metadata** (`title` e `description`) no `layout.tsx`.
-- Remoção de arquivos e recursos que não eram utilizados.
+- Implementação de Lazy Loading.
+- Inclusão de metadata (`title` e `description`) no `app/layout.tsx`.
+- Remoção de recursos e arquivos que não eram utilizados.
 
 ---
 
-# 📈 Resultados após as otimizações
+# 📊 Comparação de Performance
 
-Após aplicar as melhorias, uma nova análise foi realizada utilizando o Lighthouse.
-
-| Métrica | Depois |
-|---------|--------:|
-| Performance | **66** |
-| Accessibility | **95** |
-| Best Practices | **100** |
-| SEO | **100** |
-
-## 📷 Relatório final
-
-O relatório abaixo mostra os resultados obtidos após as otimizações.
-
-![Relatório Depois](relatorios/depois.jpeg)
+As análises foram realizadas utilizando o **Google Lighthouse**, comparando as mesmas rotas antes e depois das otimizações.
 
 ---
 
-# 📋 Comparativo
+# 🏠 Página Inicial (/)
 
 | Métrica | Antes | Depois |
-|---------|-------:|--------:|
-| Performance | **63** | **66** |
+|---------|------:|--------:|
+| Performance | **64** | **66** |
 | Accessibility | **91** | **95** |
 | Best Practices | **100** | **100** |
-| SEO | **75** | **100** |
+| SEO | **82** | **100** |
+
+## 📷 Antes das otimizações
+
+![Página Inicial - Antes](relatorios/Antes-Pagina_Inicial.png)
+
+## 📷 Depois das otimizações
+
+![Página Inicial - Depois](relatorios/Depois-Pagina_Inicial.png)
+
+---
+
+# 🧳 Página Destinos (/destinos)
+
+| Métrica | Antes | Depois |
+|---------|------:|--------:|
+| Performance | **39** | **56** |
+| Accessibility | **91** | **95** |
+| Best Practices | **100** | **100** |
+| SEO | **82** | **100** |
+
+## 📷 Antes das otimizações
+
+![Página Destinos - Antes](relatorios/Antes-Pagina_Destinos.png)
+
+## 📷 Depois das otimizações
+
+![Página Destinos - Depois](relatorios/Depois-Pagina_Destinos.png)
+
+---
+
+# 🏖️ Página Detalhes (/destinos/1)
+
+| Métrica | Antes | Depois |
+|---------|------:|--------:|
+| Performance | **63** | **62** |
+| Accessibility | **91** | **95** |
+| Best Practices | **100** | **100** |
+| SEO | **82** | **100** |
+
+## 📷 Antes das otimizações
+
+![Página Destino - Antes](relatorios/Antes-Pagina_Destinos_1.png)
+
+## 📷 Depois das otimizações
+
+![Página Destino - Depois](relatorios/Depois-Pagina_Destinos_1.png)
+
+---
+
+# 📈 Resumo dos resultados
+
+Após as otimizações foi possível observar melhorias importantes em diferentes páginas da aplicação.
+
+Principais ganhos obtidos:
+
+- Conversão das imagens para o formato **WebP**, reduzindo o tamanho dos arquivos.
+- Utilização do componente **next/image**, permitindo otimizações automáticas do Next.js.
+- Implementação de **Lazy Loading**, carregando imagens apenas quando necessário.
+- Configuração de **metadata**, elevando a pontuação de SEO para 100 em todas as páginas analisadas.
+- Melhoria nas métricas de Accessibility em todas as páginas.
+
+Na página de detalhes (`/destinos/1`) houve uma pequena variação na pontuação de Performance (63 para 62), comportamento comum em medições do Lighthouse, que podem sofrer pequenas oscilações entre execuções. Apesar disso, as demais métricas permaneceram melhores ou iguais após as otimizações implementadas.
 
 ---
 
@@ -107,11 +137,15 @@ portal-viagens/
 ├── components/
 ├── data/
 ├── public/
-├── styles/
 ├── relatorios/
-│   ├── antes.png
-│   └── depois.png
+│   ├── Antes-Pagina_Inicial.png
+│   ├── Depois-Pagina_Inicial.png
+│   ├── Antes-Pagina_Destinos.png
+│   ├── Depois-Pagina_Destinos.png
+│   ├── Antes-Pagina_Destinos_1.png
+│   └── Depois-Pagina_Destinos_1.png
 │
+├── styles/
 ├── README.md
 ├── package.json
 └── tsconfig.json
@@ -152,9 +186,9 @@ npm run start
 
 A atividade permitiu aplicar na prática técnicas de otimização de performance utilizando recursos nativos do Next.js.
 
-As principais melhorias foram a conversão das imagens para WebP, a utilização do componente `next/image`, a implementação de Lazy Loading e a configuração de metadados para SEO.
+As melhorias implementadas proporcionaram uma aplicação mais otimizada, com imagens mais leves, melhor carregamento, aumento da pontuação de SEO e melhorias de acessibilidade.
 
-Essas alterações resultaram em uma melhora nas métricas do Lighthouse, principalmente em SEO e Accessibility, além de proporcionar um carregamento mais rápido e uma melhor experiência para o usuário.
+Os resultados obtidos através do Lighthouse demonstram que pequenas alterações na forma de carregar imagens e organizar a aplicação podem gerar impactos positivos na experiência do usuário.
 
 ---
 
