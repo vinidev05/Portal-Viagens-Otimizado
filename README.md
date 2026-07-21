@@ -66,11 +66,11 @@ As análises foram realizadas utilizando o **Google Lighthouse**, comparando as 
 
 ## 📷 Antes das otimizações
 
-![Página Inicial - Antes](relatorios/Antes-Pagina_Inicial.jpeg)
+![Página Inicial - Antes](relatorios/Antes-Pagina_Inicial.png)
 
 ## 📷 Depois das otimizações
 
-![Página Inicial - Depois](relatorios/Depois-Pagina_Inicial.png)
+![Página Inicial - Depois](relatorios/Depois-Pagina_Inicial.jpeg)
 
 ---
 
@@ -85,11 +85,11 @@ As análises foram realizadas utilizando o **Google Lighthouse**, comparando as 
 
 ## 📷 Antes das otimizações
 
-![Página Destinos - Antes](relatorios/Antes-Pagina_Destinos.jpeg)
+![Página Destinos - Antes](relatorios/Antes-Pagina_Destinos.png)
 
 ## 📷 Depois das otimizações
 
-![Página Destinos - Depois](relatorios/Depois-Pagina_Destinos.png)
+![Página Destinos - Depois](relatorios/Depois-Pagina_Destinos.jpg)
 
 ---
 
@@ -104,11 +104,11 @@ As análises foram realizadas utilizando o **Google Lighthouse**, comparando as 
 
 ## 📷 Antes das otimizações
 
-![Página Destino - Antes](relatorios/Antes-Pagina_Destinos_1.jpeg)
+![Página Destino - Antes](relatorios/Antes-Pagina_Destinos_1.png)
 
 ## 📷 Depois das otimizações
 
-![Página Destino - Depois](relatorios/Depois-Pagina_Destinos_1.png)
+![Página Destino - Depois](relatorios/Depois-Pagina_Destinos_1.jpeg)
 
 ---
 
