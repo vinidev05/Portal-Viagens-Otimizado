@@ -89,7 +89,7 @@ As análises foram realizadas utilizando o **Google Lighthouse**, comparando as 
 
 ## 📷 Depois das otimizações
 
-![Página Destinos - Depois](relatorios/Depois-Pagina_Destinos.jpg)
+![Página Destinos - Depois](relatorios/Depois-Pagina_Destinos.jpeg)
 
 ---
 
