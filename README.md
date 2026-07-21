@@ -45,7 +45,7 @@ Foram realizadas as seguintes otimizações:
 - Substituição da tag `<img>` pelo componente `next/image`.
 - Implementação de Lazy Loading.
 - Inclusão de metadata (`title` e `description`) no `app/layout.tsx`.
-- Remoção de recursos e arquivos que não eram utilizados.
+- Organização dos arquivos de imagens, mantendo apenas os formatos utilizados pela aplicação.
 
 ---
 
@@ -59,14 +59,14 @@ As análises foram realizadas utilizando o **Google Lighthouse**, comparando as 
 
 | Métrica | Antes | Depois |
 |---------|------:|--------:|
-| Performance | **64** | **66** |
-| Accessibility | **91** | **95** |
+| Performance | **64** | **74** |
+| Accessibility | **91** | **100** |
 | Best Practices | **100** | **100** |
 | SEO | **82** | **100** |
 
 ## 📷 Antes das otimizações
 
-![Página Inicial - Antes](relatorios/Antes-Pagina_Inicial.png)
+![Página Inicial - Antes](relatorios/Antes-Pagina_Inicial.jpeg)
 
 ## 📷 Depois das otimizações
 
@@ -78,14 +78,14 @@ As análises foram realizadas utilizando o **Google Lighthouse**, comparando as 
 
 | Métrica | Antes | Depois |
 |---------|------:|--------:|
-| Performance | **39** | **56** |
-| Accessibility | **91** | **95** |
+| Performance | **39** | **52** |
+| Accessibility | **91** | **100** |
 | Best Practices | **100** | **100** |
 | SEO | **82** | **100** |
 
 ## 📷 Antes das otimizações
 
-![Página Destinos - Antes](relatorios/Antes-Pagina_Destinos.png)
+![Página Destinos - Antes](relatorios/Antes-Pagina_Destinos.jpeg)
 
 ## 📷 Depois das otimizações
 
@@ -97,14 +97,14 @@ As análises foram realizadas utilizando o **Google Lighthouse**, comparando as 
 
 | Métrica | Antes | Depois |
 |---------|------:|--------:|
-| Performance | **63** | **62** |
-| Accessibility | **91** | **95** |
+| Performance | **63** | **74** |
+| Accessibility | **91** | **100** |
 | Best Practices | **100** | **100** |
 | SEO | **82** | **100** |
 
 ## 📷 Antes das otimizações
 
-![Página Destino - Antes](relatorios/Antes-Pagina_Destinos_1.png)
+![Página Destino - Antes](relatorios/Antes-Pagina_Destinos_1.jpeg)
 
 ## 📷 Depois das otimizações
 

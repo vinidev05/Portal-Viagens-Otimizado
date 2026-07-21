@@ -24,7 +24,7 @@ export default async function Page({
        alt={destino.nome}
        width={800}
        height={500}
-       loading="lazy" 
+       priority 
        />
       <p>{destino.descricao}</p>
     </div>
