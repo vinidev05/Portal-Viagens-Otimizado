@@ -124,8 +124,6 @@ Principais ganhos obtidos:
 - Configuração de **metadata**, elevando a pontuação de SEO para 100 em todas as páginas analisadas.
 - Melhoria nas métricas de Accessibility em todas as páginas.
 
-Na página de detalhes (`/destinos/1`) houve uma pequena variação na pontuação de Performance (63 para 62), comportamento comum em medições do Lighthouse, que podem sofrer pequenas oscilações entre execuções. Apesar disso, as demais métricas permaneceram melhores ou iguais após as otimizações implementadas.
-
 ---
 
 # 📂 Estrutura do projeto
